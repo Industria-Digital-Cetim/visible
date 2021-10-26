@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Creando el layout de la web</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+</style>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<body>
+
+<!-- Start Content -->
+<div id="home" class="w3-content">
+    <div class="w3-top w3-bar w3-green">
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#members" class="w3-bar-item w3-button">Members</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+    <!-- slideshow -->
+    <img class="slides" src="perro1.jpg" alt="perro1" style="width:100%">
+    <img class="slides" src="perro2.jpg" alt="perro2" style="width:100%">
+    <img class="slides" src="perro3.jpg" alt="perro3" style="width:100%">
+    
+    <script>
+    w3.slideshow(".slides", 1500)
+    </script>
+
+    <!--About-->
+    <div id="about" class = "w3-container w3-padding32">
+        <h1 class="w3-center">The dogs</h1>
+        <p> This is the dogs website</p>
+    </div>
+
+    <!---Members-->
+    <div id="members" class ="w3-container w3-padding-32">
+        <div class="w3-row w3-center">
+        <div class="w3-third">
+            <img src="cetim.JPG" alt="one" style="width:60%">
+        </div>
+        <div class="w3-third">
+            <img src="cetim.JPG" alt="one" style="width:60%">
+        </div>
+        <div class="w3-third">
+            <img src="cetim.JPG" alt="one" style="width:60%">
+        </div>
+    </div>
+    </div>
+    <!-- End Content -->
+    <div id="contact" class="w3-container w3-center w3-padding-32">
+        <h2 class="w3-wide">CONTACT</h2>
+        Galicia, ESP <br>
+        Telefono: xxxxx <br>
+        Email: mail@mail.com <br>
+        <p class="w3-opacity w3-center" ><i>Deja tu comentario</i></p>
+    </div>
+    </div>
+</body>
+</html>
