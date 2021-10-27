@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Información Nanocelulosa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div id="home" class="w3-content">
+      <h1 class="w3-wide">CONSULTAR INFORMACIÓN</h1>
+      <!-- <div style="position:absolute; width:200px; height:80px; top: 20px; left: 600px"><img src="cetim.JPG" height="80px" width= "200px"></div> -->
+
+        <input class="w3-input" type="text" placeholder=" Codigo" required name="Código" id="codigo1">
+        <select name="fase" id="fase" class="w3-input">
+          <option value="" disabled selected hidden>Selecciona fase</option>
+          <option value="f1">1- Elección de pasta de celulosa</option>
+          <option value="f2">2- Pretratamiento mecánico</option>
+          <option value="f3">3- Pretratamiento enzimático</option>
+          <option value="f4">4- Pretratamiento químico</option>
+          <option value="f5">5- Homogenización</option>
+          <option value="f6">6- Secado</option>
+          <option value="f7">7- Producto final</option>
+        </select>
+        <br>
+
+        <button id="btConsultar" class="w3-button w3-black" > CONSULTAR </button>
+        <br><br>
+        <div class="w3-border">
+        <p id="resultado"> </p>
+
+        <p id="anteriores"> </p>
+      </div>
+
+      <br>
+      <br>
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-16 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <a href="https://es.linkedin.com/company/cetim-technological-centre"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <!--
+        <i class="fa fa-linkedin w3-hover-opacity"></i>-->
+        <p class="w3-medium">Powered by <a href="https://cetim.es/" target="_blank">CETIM</a></p>
+      </footer>
+
+    <!---  <br> <br>
+      <strong> <label for="fase" > Elige la fase: </label> </strong>
+      <select name="fase" id="fase">
+        <option value="f1">1- Elección de pasta de celulosa</option>
+        <option value="f2">2- Pretratamiento mecánico</option>
+        <option value="f3">3- Pretratamiento enzimático</option>
+        <option value="f4">4- Pretratamiento químico</option>
+        <option value="f5">5- Homogenización</option>
+        <option value="f6">6- Secado</option>
+        <option value="f7">7- Producto final</option>
+      </select>
+      <br> <br>
+      <button id="btConsultar" > Consultar </button>
+
+      <p id="resultado"> </p>
+
+      <p id="anteriores"> </p>
+-->
+
+
+
+  </div> <!--- DIV FINAL W3-CONTENT -->
+    <script src="index.js"></script>
+  </body>
+</html>
