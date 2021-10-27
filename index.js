@@ -1,4 +1,4 @@
-import Web3 from "web3";
+/*import Web3 from "web3";
 import NanoCelulosa from "../../build/contracts/nanocelulosa.json";
 import HDwalletProvider from '@truffle/hdwallet-provider';
 //import fs  from 'fs';
@@ -23,7 +23,7 @@ var web3 = new Web3(provider);
 //var contrato_address = "0xA6a50ec1cbC8e2a1f0AC006814A0427eE34CdaA4"; rinkeby
 var contrato_address = "0x3A80CAdE96cdD372512B7C97762754b16D8b7D66";
 
-var contrato = new web3.eth.Contract(NanoCelulosa.abi, contrato_address);
+var contrato = new web3.eth.Contract(NanoCelulosa.abi, contrato_address);*/
 //*******************************************************************************************************************************
 // DIVs
 var divGeneral = document.getElementById('div_general');
