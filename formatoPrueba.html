@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Fabricación NanoCelulosa</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="favicon.png">
+  </head>
+  <body>
+<div id="home" class="w3-content">
+
+    <h1 class="w3-wide">FABRICACIÓN NANO CELULOSA</h1>
+  <!-- <div style="position:absolute; width:200px; height:80px; top: 20px; left: 600px"><img src="cetim.JPG" height="80px" width= "200px"></div> -->
+  <div id="div_general">
+    <select name="general" id="general" class="w3-input">
+      <option value="0">Selecciona etapa a registrar</option>
+      <option value="1">Registrar pasta celulosa</option>
+      <option value="2">Registrar pretratamiento mecánico</option>
+      <option value="3">Registrar pretratamiento enzimático</option>
+      <option value="4">Registrar pretratamiento químico</option>
+      <option value="5">Registrar homogenización</option>
+      <option value="6">Registrar secado</option>
+      <option value="7">Registrar datos nanoceculosa</option>
+    </select>
+  </div>
+  <!----------------------------------------------------------------------------------------------------->
+
+    <div id="div_pasta" style="display:none">
+      <br>
+      <h3 class="w3-wide">PASTA DE CELULOSA</h3>
+      <!---
+      <strong> <label for="codigo1" > Código: </label> </strong>
+      <input type = "text" name="codigo1" id="codigo1"  size="12" placeholder="ej: A120">
+      <br><br>
+      <strong> <label for="origen" > Origen: </label> </strong>
+      <select name="origen" id="origen">
+        <option value="Pino">Pino</option>
+        <option value="Abeto">Abeto</option>
+        <option value="Eucalipto">Eucalipto</option>
+      </select>
+      <br><br>
+      <strong> <label for="cantidad" > Consistencia (%): </label> </strong>
+      <input type = "text" name="cantidad" id="cantidad" placeholder="ej: 6" size="3">
+      <br><br>
+
+      <strong> <label for="celulosa" > Celulosa (%): </label> </strong>
+      <input type = "text" name="celulosa" id="celulosa" placeholder="ej: 75" size="3">
+      <br><br>
+      <strong> <label for="hemicelulosa" > Hemicelulosa (%): </label> </strong>
+      <input type = "text" name="hemicelulosa" id="hemicelulosa" placeholder="ej: 15" size="3">
+      <br><br>
+      <strong> <label for="lignina" > Lignina (%): </label> </strong>
+      <input type = "text" name="lignina" id="lignina" placeholder="ej: 10" size="3">
+    <br><br>
+    <button id="btPasta" > Registrar </button>
+    <hr>-->
+    <select class="w3-input" id="origen">
+          <option class="w3-input" >Origen </option>
+          <option> Abeto </option>
+          <option> Eucalipto </option>
+          <option> Pino </option>
+        </select>
+        <input class="w3-input" type="text" placeholder=" Codigo" required name="Código" id="codigo1">
+        <input class="w3-input" type="text" placeholder=" Cantidad" required name="Cantidad">
+        <input class="w3-input" type="text" placeholder=" Consistencia (%)" required name="Consistencia (%)" id="cantidad">
+        <input class="w3-input" type="text" placeholder=" Celulosa (%)" required name="Celulosa (%)" id="celulosa">
+        <input class="w3-input" type="text" placeholder=" Hemicelulosa (%)" required name="Hemicelulosa (%)" id="hemicelulosa">
+        <input class="w3-input" type="text" placeholder=" Lignina (%)" required name="Lignina (%)" id="lignina">
+        <br>
+        <button id="btPasta" class="w3-button w3-black" > REGISTRAR </button>
+  </div>
+    <!--------------------------------------------------------------------------------------------------------------------------->
+    <div id="div_mecanico" style="display:none">
+      <br>
+    <h3 class="w3-wide">PRETRATAMIENTO MECÁNICO</h3>
+    <!--
+      <strong> <label for="codigo2" > Código: </label> </strong>
+      <input type = "text" name="codigo2" id="codigo2" placeholder="ej: A120" size="12">
+      <br><br>
+
+      <strong><label for="sim_mec">Simultaneidad con pretratamiento enzimático: </label></strong>
+      <select name="sim_mec" id="sim_mec">
+        <option>No</option>
+        <option>Si</option>
+      </select>
+      <br><br>
+    <strong><label for="tipo_pre">Técnica: </label></strong>
+    <select name="tipo_pre" id="tipo_pre">
+      <option>Molino de cuchillas</option>
+      <option>Refinador</option>
+    </select>
+    <br><br>
+      <strong> <label for="tiempo2" > Tiempo: </label> </strong>
+      <input type = "text" name="tiempo2" id="tiempo2" placeholder="ej: 10 min" size="6">
+      <br><br>
+      <strong> <label for="ciclos2" > Número de ciclos: </label> </strong>
+      <input type = "text" name="ciclos2" id="ciclos2" placeholder="" size="3">
+      <br><br>
+      <div id="refino" style="display:none">
+        <strong><label for="tipo_discos">Tipología de discos: </label></strong>
+        <select name="tipo_discos" id="tipo_discos">
+          <option>Finos (RF)</option>
+          <option>Gruesos (RG)</option>
+        </select>
+          </div>
+          <br>
+            <button id="btPreMecanico" > Registrar </button>
+            <hr>
+      -->
+      <input class="w3-input" type="text" placeholder=" Codigo" required name="Código" id="codigo2">
+      <select class="w3-input" name="sim_mec" id="sim_mec">
+        <option disabled selected hidden>Simultaneidad con enzimático</option>
+        <option>No</option>
+        <option>Si</option>
+      </select>
+
+      <select class="w3-input" name="tipo_pre" id="tipo_pre">
+        <option disabled selected hidden>Técnica</option>
+        <option>Molino de cuchillas</option>
+        <option>Refinador</option>
+      </select>
+      <input type = "text" class="w3-input" required name="tiempo2" id="tiempo2" placeholder=" Tiempo">
+      <input type = "text" class="w3-input" name="ciclos2" id="ciclos2" placeholder=" Ciclos">
+      <div id="refino" style="display:none">
+        <select  name= "tipo_discos" class="w3-input"  id="tipo_discos">
+          <option disabled selected hidden>Tipo de discos</option>
+          <option>Finos (RF)</option>
+          <option>Gruesos (RG)</option>
+        </select>
+      </div>
+
+      <br>
+      <button id="btPreMecanico" class="w3-button w3-black" > REGISTRAR </button>
+</div>
+  <!--------------------------------------------------------------------------------------------------------------------------->
+<div id="div_enzimatico" style="display:none">
+  <br>
+  <h3 class="w3-wide">PRETRATAMIENTO ENZIMÁTICO</h3>
+
+  <input class="w3-input" type="text" placeholder=" Codigo" required name="Código" id="codigo3">
+  <select name="sel_doble" id="sel_doble" class="w3-input">
+    <option disabled selected hidden>Doble pretratamiento enzimático</option>
+    <option>No</option>
+    <option>Si</option>
+  </select>
+<input class="w3-input" type="text" placeholder=" Enzima" required name="enzima" id="enzima">
+<input class="w3-input" type="text" placeholder=" Cantidad enzima" required name="cant_enz" id="cant_enz">
+<input class="w3-input" type="text" placeholder=" Tiempo de reacción" required name="tiempo3" id="tiempo3">
+<input class="w3-input" type="text" placeholder=" Temperatura reactor" required name="temp3" id="temp3">
+<br>
+<button id="btPreEnzima" class="w3-button w3-black" > Registrar </button>
+  <!---
+  <strong><label for="sel_doble"> Doble pretramiento enzimatico: </label></strong>
+  <select name="sel_doble" id="sel_doble">
+    <option>No</option>
+    <option>Si</option>
+  </select>
+    <br><br>
+
+    <strong> <label for="codigo3" > Código: </label> </strong>
+    <input type = "text" name="codigo3" id="codigo3" placeholder="ej: A120" size="12">
+    <br><br>
+    <strong><label for="enzima">Enzima: </label></strong>
+    <select name="enzima" id="enzima">
+      <option>Enzima1</option>
+      <option>Enzima2</option>
+      <option>Enzima3</option>
+    </select>
+    <strong> <label for="cant_enz" > Cantidad enzima: </label> </strong>
+    <input type = "text" name="cant_enz" id="cant_enz" placeholder="" size="5">
+    <br><br>
+    <strong> <label for="tiempo3" > Tiempo de reacción: </label> </strong>
+    <input type = "text" name="tiempo3" id="tiempo3" placeholder="" size="5">
+    <br><br>
+    <strong> <label for="temp3" > Temperatura reactor: </label> </strong>
+    <input type = "text" name="temp3" id="temp3" placeholder="" size="5">
+  <br><br>
+  <button id="btPreEnzima" > Registrar </button>
+-->
+  <!------------------------------------------------------------------->
+
+  <div id="doble" style="display:none">
+<hr>
+  <h3 class="w3-wide">SEGUNDO PRETRATAMIENTO ENZIMÁTICO</h3>
+<!--
+        <strong> <label for="codigo32" > Código: </label> </strong>
+        <input type = "text" name="codigo32" id="codigo32" placeholder="ej: A120" size="12">
+        <br><br>
+        <strong><label for="enzima2">Enzima: </label></strong>
+        <select name="enzima2" id="enzima2">
+          <option>Enzima1</option>
+          <option>Enzima2</option>
+          <option>Enzima3</option>
+        </select>
+        <strong> <label for="cant_enz2" > Cantidad enzima: </label> </strong>
+        <input type = "text" name="cant_enz2" id="cant_enz2" placeholder="" size="5">
+        <br><br>
+        <strong> <label for="tiempo32" > Tiempo de reacción: </label> </strong>
+        <input type = "text" name="tiempo32" id="tiempo32" placeholder="" size="5">
+        <br><br>
+        <strong> <label for="temp32" > Temperatura reactor: </label> </strong>
+        <input type = "text" name="temp32" id="temp32" placeholder="" size="5">
+      <br><br>
+      <button id="btPreEnzima2" > Registrar </button>
+  </div>
+  <hr>
+-->
+<input class="w3-input" type="text" placeholder=" Codigo" required name="Código" id="codigo32">
+<input class="w3-input" type="text" placeholder=" Enzima" required name="enzima" id="enzima2">
+<input class="w3-input" type="text" placeholder=" Cantidad enzima" required name="cant_enz" id="cant_enz2">
+<input class="w3-input" type="text" placeholder=" Tiempo de reacción" required name="tiempo3" id="tiempo32">
+<input class="w3-input" type="text" placeholder=" Temperatura reactor" required name="temp3" id="temp32">
+<br>
+<button id="btPreEnzima2" class="w3-button w3-black" > Registrar </button>
+</div>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------------->
+<div id="div_quimico" style="display:none">
+  <br>
+<h3 class="w3-wide">PRETRATAMIENTO QUÍMICO</h3>
+<!---<select name="quimico" id="quimico">
+  <option>No</option>
+  <option>Si</option>
+</select>-->
+<!--
+  <strong> <label for="codigo4" > Código: </label> </strong>
+  <input type = "text" name="codigo4" id="codigo4" placeholder="ej: A120" size="12">
+  <br><br>
+  <strong> <label for="cant_tempo" > Cantidad TEMPO: </label> </strong>
+  <input type = "text" name="cant_tempo" id="cant_tempo" placeholder="" size="3">
+  <br><br>
+  <strong> <label for="cant_bro" > Cantidad bromuro sódico: </label> </strong>
+  <input type = "text" name="cant_bro" id="cant_bro" placeholder="" size="3">
+  <br><br>
+  <strong> <label for="cant_clo" > Cantidad hipoclorito sódico: </label> </strong>
+  <input type = "text" name="cant_clo" id="cant_clo" placeholder="" size="3">
+  <br><br>
+  <strong> <label for="cant_sosa" > Cantidad sosa: </label> </strong>
+  <input type = "text" name="cant_sosa" id="cant_sosa" placeholder="" size="3">
+  <br><br>
+  <strong> <label for="ph_ant4" > pH inicial: </label> </strong>
+  <input type = "text" name="ph_ant4" id="ph_ant4" placeholder="" size="3">
+  <br><br>
+  <strong> <label for="tiempo4" > Tiempo funcionamiento: </label> </strong>
+  <input type = "text" name="tiempo4" id="tiempo4" placeholder="" size="3">
+ <br><br>
+ <strong> <label for="cantidad4" > Cantidad obtenida: </label> </strong>
+  <input type = "text" name="cantidad4" id="cantidad4" placeholder="ej: 1,5 kg" size="4">
+  <br><br>
+  <strong> <label for="carboxi" > Tasas carboxílicos: </label> </strong>
+  <input type = "text" name="carboxi" id="carboxi" placeholder="" size="4">
+<br><br>
+<button id="btPreQuimico" > Registrar </button>
+<hr>
+-->
+
+<input class="w3-input" type="text" placeholder=" Codigo" required name="código4" id="codigo4">
+<input class="w3-input" type="text" placeholder=" Cantidad TEMPO" required name="cant_tempo" id="cant_tempo">
+<input class="w3-input" type="text" placeholder=" Cantidad bromuro sódico" required name="cant_bro" id="cant_bro">
+<input class="w3-input" type="text" placeholder=" Cantidad hipoclorito sódico" required name="cant_clo" id="cant_clo">
+<input class="w3-input" type="text" placeholder=" Cantidad sosa" required name="cant_sosa" id="cant_sosa">
+<input class="w3-input" type="text" placeholder=" pH inicial" required name="ph_ant4" id="ph_ant4">
+<input class="w3-input" type="text" placeholder=" Tiempo funcionamiento" required name="tiempo4" id="tiempo4">
+
+<br>
+<button id="btPreQuimico" class="w3-button w3-black" >REGISTRAR </button>
+
+
+</div>
+<!--------------------------------------------------------------------------------------------------------------------------->
+<div id="div_homo" style="display:none">
+<!---
+<h3> Instrucciones </h3>
+  <ol>
+    <li>Rellenar el campo "Número de pasos"</li>
+    <li>Pulsar el botón "Fijar Pasos"</li>
+    <li>Rellenar los campos asociados a las presiones de cada paso.</li>
+    <li>Rellenar el código del lote y pulsar el botón 'Registrar'</li>
+  </ol>
+    <h3>Datos de la Homogenización</h3>
+
+      <div id="presion">
+
+      <strong> <label for="pasos5" > Número de pasos: </label> </strong>
+      <input type = "text" name="pasos5" id="pasos5" placeholder="" size="1">
+        <strong> <label for="presion" > Presión: </label> </strong>
+      </div>
+      <br>
+      <button id="btPasos" > Fijar pasos</button>
+      <br><br>
+      <strong> <label for="codigo5" > Código: </label> </strong>
+      <input type = "text" name="codigo5" id="codigo5" placeholder="ej: A120" size="12">
+       <br><br>
+     <strong> <label for="cantidad5" > Cantidad obtenida: </label> </strong>
+      <input type = "text" name="cantidad5" id="cantidad5" placeholder="ej: 1,5 kg" size="5">
+
+    <br><br>
+
+    <button id="btHomo" > Registrar </button>
+    <hr>
+  -->
+  <h3 class="w3-wide"> INSTRUCCIONES </h3>
+  <ol>
+    <li> Rellenar el campo "código" del lote</li>
+    <li>Rellenar el campo "Número de pasos"</li>
+    <li>Pulsar el botón "Fijar Pasos"</li>
+    <li>Rellenar los campos asociados a las presiones de cada paso.</li>
+    <li>Pulsar el botón "Registrar"</li>
+  </ol>
+  <br>
+    <h3 class="w3-wide">HOMOGENIZACIÓN</h3>
+    <br>
+    <input class="w3-input" type="text" placeholder=" Codigo" required name="código5" id="codigo5">
+    <div id="presion">
+    <input class="w3-input" type="text" placeholder=" Número de pasos" required name="pasos5" id="pasos5">
+    <br>
+    </div>
+    <br>
+    <br>
+    <button id="btPasos" class="w3-button w3-black" > FIJAR PASOS</button>
+    <br> <br>
+    <button id="btHomo" class="w3-button w3-black" > REGISTRAR </button>
+  </div>
+  <!--------------------------------------------------------------------------------------------------------------------------->
+  <div id="div_secado" style="display:none">
+    <br>
+      <h3 class="w3-wide">SECADO</h3>
+<!---
+      <strong> <label for="codigo6" > Código: </label> </strong>
+      <input type = "text" name="codigo6" id="codigo6" placeholder="ej: A120" size="12">
+        <br><br>
+      <strong> <label for="v_bomba" > Velocidad de la bomba: </label> </strong>
+      <input type = "text" name="v_bomba" id="v_bomba" placeholder="" size="3">
+        <br><br>
+      <strong> <label for="temp_in" > Temperatura de entrada: </label> </strong>
+      <input type = "text" name="temp_in" id="temp_in" placeholder="" size="3">
+        <br><br>
+      <strong> <label for="temp_out" > Temperatura de salida: </label> </strong>
+      <input type = "text" name="temp_out" id="temp_out" placeholder="" size="3">
+      <br><br>
+      <strong> <label for="pre6" > Presión: </label> </strong>
+      <input type = "text" name="pre6" id="pre6" placeholder="" size="3">
+      <br><br>
+      <strong> <label for="tiempo6" > Tiempo funcionamiento: </label> </strong>
+      <input type = "text" name="tiempo6" id="tiempo6" placeholder="" size="3">
+      <br><br>
+    <button id="btSecado" > Registrar </button>
+    <hr>
+  -->
+  <input class="w3-input" type="text" placeholder=" Codigo" required name="código6" id="codigo6">
+  <input class="w3-input" type="text" placeholder=" Velocidad bomba" required name="v_bomba" id="v_bomba">
+  <input class="w3-input" type="text" placeholder=" Temperatura de entrada" required name="temp_in" id="temp_in">
+  <input class="w3-input" type="text" placeholder=" Temperatura de salida" required name="temp_out" id="temp_out">
+  <input class="w3-input" type="text" placeholder=" Presión" required name="pre6" id="pre6">
+  <input class="w3-input" type="text" placeholder=" Tiempo funcionamiento" required name="tiempo6" id="tiempo6">
+  <br>
+<button id="btSecado" class="w3-button w3-black"> REGISTRAR </button>
+      </div>
+      <!--------------------------------------------------------------------------------------------------------------------------->
+      <div id="div_final" style="display:none">
+
+    <h3 class="w3-wide"> NANO CELULOSA</h3>
+ <!---
+      <strong> <label for="codigo7" > Código: </label> </strong>
+      <input type = "text" name="codigo7" id="codigo7" placeholder="ej: A120" size="12">
+      <br><br>
+      <strong> <label for="cantidad_final" > Cantidad: </label> </strong>
+      <input type = "text" name="cantidad_final" id="cantidad_final" placeholder="" size="6">
+      <br><br>
+      <strong> <label for="tam_final" >Tamaño: </label> </strong>
+      <input type = "text" name="tam_final" id="tam_final" placeholder="" size="6">
+      <br><br>
+      <strong> <label for="grup_final" >Análisis FTIR: </label> </strong>
+      <input type = "text" name="grup_final" id="grup_final" placeholder="" size="6">
+      <br><br>
+      <strong> <label for="viscosidad" >Viscosidad: </label> </strong>
+      <input type = "text" name="viscosidad" id="viscosidad" placeholder="" size="6">
+    <br><br>
+    <button id="btNanocelulosa" > Registrar </button>
+    <hr>
+  </div>
+-->
+<input class="w3-input" type="text" placeholder=" Codigo" required name="código7" id="codigo7">
+<input class="w3-input" type="text" placeholder=" Cantidad" required name="cantidad_final" id="cantidad_final">
+<input class="w3-input" type="text" placeholder=" Tamaño" required name="tam_final" id="tam_final">
+<input class="w3-input" type="text" placeholder=" Viscosidad" required name="viscosidad" id="viscosidad">
+<input class="w3-input" type="text" placeholder=" Análisis FTIR" required name="grup_final" id="grup_final">
+<br>
+<button id="btNanocelulosa" class="w3-button w3-black"> REGISTRAR </button>
+</div>
+</div> <!-- DIV FINAL -->
+    <script src="index.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </body>
+</html>
